@@ -1,0 +1,55 @@
+body, html{
+				background: #171717;
+			}
+			
+			*{
+				margin: 0;
+			}
+			
+			#my-content{
+				position: relative;
+				overflow: hidden;
+			}
+			
+			#my-content > iframe{
+				z-index: 2;
+				position: relative;
+			}
+			
+			#my-content > span.black{
+				z-index: 3;
+				position: absolute;
+				left: 0;
+				width: 100%;
+				height: 38px;
+				background: #000;
+				bottom: 0;
+				color: #fff;
+				line-height: 38px;
+				font-size: 20px;
+				text-align: center;
+				border-top: 2px solid #ffb700;
+			}
+			
+			#my-content > span.black a.fullscreen{
+				display: block;
+				float: right;
+				width: 38px;
+				height: 38px;
+				background: #fff;
+				position: relative;
+				z-index: 4;
+				cursor: pointer;
+				background: url(images/fullscreen.png) center center no-repeat #ffb700;
+				background-size: 85%;
+			}
+			
+			#my-content > span.black a.fullscreen.active{
+				background: url(images/window.png) center center no-repeat #ffb700;
+				background-size: 85%;
+			}
+			
+			#my-content{
+				width: 100%;
+				height: 100%;
+			}
