@@ -1,59 +1,14 @@
 <html>
 	<head>
+		<meta charset="utf-8" />
 		<title>Game</title>
-		<style>
-			
-			body, html{
-				background: #171717;
-			}
-			
-			*{
-				margin: 0;
-			}
-			
-			#my-content{
-				position: relative;
-				overflow: hidden;
-			}
-			
-			#my-content > iframe{
-				z-index: 2;
-				position: relative;
-			}
-			
-			#my-content > span.black{
-				z-index: 3;
-				position: absolute;
-				left: 0;
-				width: 100%;
-				height: 38px;
-				background: #000;
-				bottom: 0;
-				color: #fff;
-				line-height: 38px;
-				font-size: 20px;
-				text-align: center;
-				border-top: 2px solid #ffb700;
-			}
-			
-			#my-content > span.black a{
-				color: #ffb700;
-				text-decoration: none;
-			}
-			
-		</style>
+		<link rel='stylesheet' href='style.css' type='text/css' media='all' />
 	</head>
 	<body>
-		<div id="my-content">
-			<iframe width="100%" height="100%" src="https://www.pacogames.com/webgl/cars-thief/index.php" scrolling="no" frameborder="0" allowfullscreen=""></iframe>
-			<span class="black">FLACS GAMES: <span style="font-weight: bold; color: #ffb700; "><a target="_blank" href="https://vk.com/playtofree">https://vk.com/playtofree</a></span></span>
+		<div id="my-content" class="game">
+			<iframe id="gameframe" width="100%" height="100%" src="https://www.pacogames.com/webgl/cars-thief/index.php"></iframe>
+			<span class="black">FLACS GAMES: <span style="font-weight: bold; color: #ffb700; ">https://vk.com/playtofree</span><a id="toggle-btn" class="fullscreen" onclick="CheckFullScreen();" title="Развернуть / Свернуть">&nbsp;</a></span>
 		</div>
-<!--<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script>
-  (adsbygoogle = window.adsbygoogle || []).push({
-    google_ad_client: "ca-pub-4994736110541387",
-    enable_page_level_ads: true
-  });
-</script>-->
+		<script type='text/javascript' src='script.js'></script>
 	</body>
 </html>
