@@ -30,6 +30,15 @@ body, html{
 				text-align: center;
 				border-top: 2px solid #ffb700;
 			}
+
+                        #my-content > span.black a{
+				text-decoration: none;
+				color: #ffb700;
+			}
+			
+			#my-content > span.black a{
+				text-decoration: underline;
+			}
 			
 			#my-content > span.black a.fullscreen{
 				display: block;
